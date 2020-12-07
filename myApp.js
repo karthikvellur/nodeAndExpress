@@ -2,6 +2,9 @@ var express = require('express');
 var app = express();
 const bodyParser = require('body-parser');
 
+// Serve an HTML File
+app.get('/html', () => )
+
 app.get(
   '/:word/echo', (req, res) => {
     res.send({echo: req.params.word})
